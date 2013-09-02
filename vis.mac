@@ -1,0 +1,8 @@
+/control/verbose 2
+/run/verbose 2
+/vis/open OGLIX
+#/vis/viewer/set/viewpointThetaPhi 45 45
+/vis/drawVolume
+/vis/viewer/set/style surface
+/vis/scene/add/trajectories
+/vis/modeling/trajectories/create/drawByCharge
