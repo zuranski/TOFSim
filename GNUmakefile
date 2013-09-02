@@ -9,8 +9,6 @@ all: lib bin
 
 CPPFLAGS+= `root-config --cflags`
 EXTRALIBS+= `root-config --glibs`
-EXTRALIBS+=-L/usr/lib/x86_64-linux-gnu -lXi
-
 include $(G4INSTALL)/config/binmake.gmk
 
 visclean:
