@@ -1,4 +1,3 @@
-#/bin/bash
 # ROOT is required with root-config command available in PATH
 
 # Geant4 is required as it's a geant4 simulation
