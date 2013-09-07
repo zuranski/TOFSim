@@ -213,8 +213,8 @@ void TOFPhysicsList::ConstructOp()
   theCerenkovProcess->SetMaxNumPhotonsPerStep(100);
   theCerenkovProcess->SetTrackSecondariesFirst(true);
  
-  theScintillationProcess->SetScintillationYieldFactor(1.);
-  //theScintillationProcess->SetScintillationYieldFactor(0.01);
+  //theScintillationProcess->SetScintillationYieldFactor(1.);
+  theScintillationProcess->SetScintillationYieldFactor(0.01);
   theScintillationProcess->SetTrackSecondariesFirst(true);
 
   G4OpticalSurfaceModel themodel = glisur;
@@ -226,8 +226,8 @@ void TOFPhysicsList::ConstructOp()
     G4ProcessManager* pmanager = particle->GetProcessManager();
     G4String particleName = particle->GetParticleName();
     if (theCerenkovProcess->IsApplicable(*particle)) {
-      pmanager->AddProcess(theCerenkovProcess);
-      pmanager->SetProcessOrdering(theCerenkovProcess,idxPostStep);
+      //pmanager->AddProcess(theCerenkovProcess);
+      //pmanager->SetProcessOrdering(theCerenkovProcess,idxPostStep);
     }
 
     

@@ -42,7 +42,7 @@ int main(int argc, char *argv[]){
   runManager->SetUserAction(new TOFTrackingAction());  
   runManager->Initialize();
 
-  runManager->BeamOn(3);
+  //runManager->BeamOn(3);
 
   #ifdef G4VIS_USE
   G4VisManager* visManager = new G4VisExecutive;
